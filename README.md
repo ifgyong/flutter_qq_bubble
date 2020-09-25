@@ -27,7 +27,7 @@ import 'package:flutter_qq_bubble/flutter_qq_bubble.dart';
 
 ## 属性说明：
 
-```
+```dart
 /// 球之间断开连接的最大距离，基数是球的半径[radius],默认是[五倍]半径
 final double maxMultipleDistance;
 
@@ -56,10 +56,10 @@ final Color backgroundColor;
 
 
 #### 首先声明的时候给定 一个`VaueKey`。
-```
+```dart
 
 QQBubble(
-....
+.... dart
       boomKey: ValueKey(index)
       ...
     )
@@ -67,7 +67,7 @@ QQBubble(
 ```
 #### 爆破单个
 
-```
+```dart
 qqEventBus.fire(Boom(ValueKey(0));
 ```
 
