@@ -11,10 +11,10 @@
 效果图看不见？[去github看看](https://github.com/ifgyong/flutter_qq_bubble)
 ## 如何使用
 
-## 配置`pubspec.yaml`
+### 配置`pubspec.yaml`
 
 ```dart
- flutter_qq_bubble: ^*.*.*
+flutter_qq_bubble: ^*.*.*
  
 flutter pub get 
 
@@ -67,8 +67,13 @@ QQBubble(
 ```
 #### 爆破单个
 
+> `qqEventBus`为全局变量，直接使用即可。`ValueKey(value)`.
+>
+> 如果不懂`ValueKey()`用法，[点我去学习一下](https://juejin.im/post/6863300824660082701)
+
+
 ```dart
-qqEventBus.fire(Boom(ValueKey(0));
+qqEventBus.fire(Boom(ValueKey(value));
 ```
 
 ## 爆破所有 

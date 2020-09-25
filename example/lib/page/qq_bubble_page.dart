@@ -19,7 +19,12 @@ class _QQBubblePageState extends State<QQBubblePage> {
       appBar: AppBar(
         title: Text('圈圈'),
       ),
-      body: _listView,
+      body: LayoutBuilder(
+        builder: (context, box) {
+          print('${box.maxHeight}  ${box.maxWidth}');
+          return _listView;
+        },
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
