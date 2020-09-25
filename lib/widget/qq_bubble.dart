@@ -49,7 +49,7 @@ class QQBubble extends StatefulWidget {
 
 enum DragState { move, moveCut, end, endCut }
 double _minRadiusMutiple = 0.33;
-final EventBus dragEventBus = EventBus();
+final EventBus qqEventBus = EventBus();
 
 class _QQBubbleState extends State<QQBubble>
     with SingleTickerProviderStateMixin {
@@ -282,7 +282,7 @@ class _QQBubbleState extends State<QQBubble>
   @override
   void initState() {
     _dragState = DragState.move;
-    _subscription = dragEventBus.on<Boom>().listen((event) {
+    _subscription = qqEventBus.on<Boom>().listen((event) {
       if (event.key.value == widget.boomKey.value) {
         playGIfToEnd();
       }

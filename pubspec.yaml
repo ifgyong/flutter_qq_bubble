@@ -1,6 +1,6 @@
 name: flutter_qq_bubble
 description: A simple qq bubble anmation  Flutter package.
-version: 1.0.1
+version: 1.0.2
 author: ifgyong
 homepage: http://www.fgyong.cn
 repository: https://github.com/ifgyong
@@ -25,7 +25,8 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  # assets:
+  assets:
+    - assets/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   #

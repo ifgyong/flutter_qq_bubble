@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_qq_bubble/widget/qq_bubble.dart';
+import 'package:flutter_qq_bubble/flutter_qq_bubble.dart';
 
 ///
 /// Created by fgyong on 2020/9/23.
@@ -45,7 +45,7 @@ class _QQBubblePageState extends State<QQBubblePage> {
   void _clearRedPoints() {
     for (var i = 0; i < _isdeleteList.length; ++i) {
       final key = ValueKey(i);
-      dragEventBus.fire(Boom(key));
+      qqEventBus.fire(Boom(key));
     }
   }
 

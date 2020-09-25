@@ -1,3 +1,2 @@
-## [0.0.1] - TODO: Add release date.
+## 1.0.1  - 新增爆破效果
 
-* TODO: Describe initial release.
